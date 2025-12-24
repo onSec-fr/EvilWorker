@@ -1,0 +1,9 @@
+{
+  "name": "dummy-node-app",
+  "version": "1.0.0",
+  "description": "Fichier package.json factice pour éviter les erreurs de build",
+  "main": "proxy_server.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC"
+}
